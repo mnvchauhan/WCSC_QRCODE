@@ -1,0 +1,302 @@
+/* Modern Responsive CSS for Social Links Page */
+
+/* General Layout */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f4 60%, #ffe3c6 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    text-align: center;
+    background: linear-gradient(90deg, #ffb578 60%, #ff8c42 100%);
+    color: #fff;
+    padding: 1.2rem 0;
+    box-shadow: 0 2px 12px rgba(255, 139, 66, 0.08);
+    letter-spacing: 1px;
+}
+
+.navbar-founder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar-founder-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff8c42;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(255, 139, 66, 0.10);
+    transition: transform 0.3s;
+}
+
+.navbar-founder-photo:hover {
+    transform: scale(1.08) rotate(-5deg);
+}
+
+.navbar-address {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.navbar-address i {
+    margin-right: 0.3rem;
+    color: #fff;
+}
+
+/* Main Section: Equal Margin Top & Bottom */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+section {
+    width: 100%;
+    max-width: 750px;
+    padding: 2.5rem 2rem;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    color: #ff8c42;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Founder Card */
+.founder-card {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #eaf4ff 60%, #ffe3c6 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.founder-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffb578;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(255, 139, 66, 0.10);
+}
+
+.founder-info h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.founder-info p {
+    margin: 0;
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Founder Social Links - Fixed & Responsive */
+.founder-social-links {
+    margin-top: 0.7rem;
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.founder-social-links a {
+    color: #050505;
+    background: #eaf4ff;
+    border-radius: 50%;
+    padding: 0.4rem;
+    font-size: 1.1rem;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    /* box-shadow: 0 2px 8px rgba(219, 216, 216, 0.07); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.founder-social-links a:hover {
+    background: #ff8c42;
+    color: #fff;
+    transform: scale(1.15);
+}
+
+/* About Text */
+.about-text {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #333;
+    background: #eaf4ff;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: box-shadow 0.3s;
+}
+
+.about-text p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.about-toggle {
+    color: #0077ff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 0.7rem;
+    transition: color 0.2s;
+}
+.about-toggle:hover {
+    color: #ff8c42;
+}
+
+/* Social Links Cards */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    flex: 1 1 180px;
+    max-width: 220px;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+ul a {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    background: linear-gradient(90deg, #ffe3c6 60%, #ffb578 100%);
+    color: #222;
+    text-decoration: none;
+    padding: 1.2rem 1rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(255, 139, 66, 0.10);
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+ul a i {
+    font-size: 1.4rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+ul a:hover {
+    background: linear-gradient(90deg, #ff8c42 60%, #ffb578 100%);
+    color: #fff;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 24px rgba(255, 139, 66, 0.18);
+}
+
+ul a:hover i {
+    color: #fff;
+    transform: scale(1.2) rotate(-8deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    section {
+        padding: 1.2rem 0.5rem;
+    }
+    .founder-card {
+        padding: 1.2rem 1rem;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar-founder-photo {
+        width: 50px;
+        height: 50px;
+    }
+    .founder-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0.5rem;
+    }
+    .founder-photo {
+        width: 80px;
+        height: 80px;
+    }
+    .founder-info h3 {
+        font-size: 1.2rem;
+    }
+    .founder-info p {
+        font-size: 1rem;
+    }
+    .founder-social-links {
+        gap: 0.5rem;
+    }
+    .founder-social-links a {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    ul {
+        gap: 1rem;
+    }
+    li {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    ul a {
+        font-size: 1rem;
+        padding: 1rem 0.7rem;
+    }
+    section {
+        padding: 0.7rem;
+    }
+    main {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
